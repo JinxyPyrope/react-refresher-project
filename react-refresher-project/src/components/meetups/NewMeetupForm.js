@@ -3,6 +3,7 @@ import { useRef } from "react"
 import Card from "../ui/Card"
 import classes from "./NewMeetupForm.module.css"
 
+//The Add New MMeetup Page setting up the inputs and what gets added to the Firebase  //
 function NewMeetupForm(props) {
   const titleInputRef = useRef()
   const imageInputRef = useRef()
@@ -24,7 +25,7 @@ function NewMeetupForm(props) {
       description: enteredDescription
     }
 
-    props.onAddMeetup(meetupData);
+    props.onAddMeetup(meetupData)
   }
 
   return (
